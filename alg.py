@@ -35,6 +35,7 @@ while(0<1):
         print summary
         page = urllib.urlopen("http://xauriga.com/tech.html").read()
         text_file = open("tech.html", "w")
+        print "Opened tech.html"
         newsummary = ''.join(('<p> ',summary, '</p>'))
         print newsummary
         reg = "%s(.*?)%s" % (str1,str2)
